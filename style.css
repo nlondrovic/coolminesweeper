@@ -1,0 +1,180 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url('images/jadran.jpg');
+	background-size: cover;
+}
+
+#container {
+	margin: 0 auto;
+	padding: 10px;
+	width: fit-content;
+	background-color: rgb(192, 192, 192);
+}
+
+#board {
+	display: flex;
+	width: fit-content;
+	border-right: 6px white solid;
+	border-bottom: 6px white solid;
+	border-top: 6px rgb(128, 128, 128) solid;
+	border-left: 6px rgb(128, 128, 128) solid;
+}
+
+.inactive-board {
+	pointer-events: none;
+}
+
+.cell {
+	width: 50px;
+	height: 50px;
+	background-color: rgb(192, 192, 192);
+	background-size: 45px 45px;
+	border-top: 6px white solid;
+	border-left: 6px white solid;
+	border-bottom: 6px rgb(128, 128, 128) solid;
+	border-right: 6px rgb(128, 128, 128) solid;
+}
+
+.cell:active {
+	border: none;
+	border-top: 6px rgb(128, 128, 128) solid;
+	border-left: 6px rgb(128, 128, 128) solid;
+}
+
+.revealed {
+	background-color: rgb(192, 192, 192);
+	border: 2px rgb(128, 128, 128) solid;
+}
+
+.revealed:active {
+	border: 2px rgb(128, 128, 128) solid;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+	padding: 10px;
+	border-top: 6px rgb(128, 128, 128) solid;
+	border-left: 6px rgb(128, 128, 128) solid;
+	border-bottom: 6px white solid;
+	border-right: 6px white solid;
+}
+
+.action-btn {
+	width: 80px;
+	height: 80px;
+	background-image: url('images/smiley.png');
+	background-color: rgb(198, 198, 198);
+	background-repeat: no-repeat;
+	background-size: 70px 70px;
+	border-top: 6px white solid;
+	border-left: 6px white solid;
+	border-bottom: 6px rgb(128, 128, 128) solid;
+	border-right: 6px rgb(128, 128, 128) solid;
+}
+
+.action-btn:active {
+	border: none;
+	border-top: 6px rgb(128, 128, 128) solid;
+	border-left: 6px rgb(128, 128, 128) solid;
+	border-bottom: 4px rgb(128, 128, 128) solid;
+	border-right: 4px rgb(128, 128, 128) solid;
+}
+
+.counter {
+	display: flex;
+	background-color: #000;
+	color: #f00;
+	font-size: 70px;
+	font-family: sevenSegment;
+	border-top: 3px rgb(128, 128, 128) solid;
+	border-left: 3px rgb(128, 128, 128) solid;
+	border-bottom: 3px white solid;
+	border-right: 3px white solid;
+}
+
+.time-counter {
+	width: 113px;
+	justify-content: end;
+}
+
+.flags-counter {
+	width: 77px;
+	justify-content: end;
+}
+
+
+
+.bg-flag {
+	background-image: url('images/flag.png');
+}
+
+.bg-flag:active {
+	border-top: 6px white solid;
+	border-left: 6px white solid;
+	border-bottom: 6px rgb(128, 128, 128) solid;
+	border-right: 6px rgb(128, 128, 128) solid;
+}
+
+.bg-mine {
+	background-image: url('images/mine.png');
+}
+
+.bg-red {
+	background-color: #f00;
+}
+
+.bg-num1 {
+	background-image: url('images/num1.png');
+}
+
+.bg-num2 {
+	background-image: url('images/num2.png');
+}
+
+.bg-num3 {
+	background-image: url('images/num3.png');
+}
+
+.bg-num4 {
+	background-image: url('images/num4.png');
+}
+
+.bg-num5 {
+	background-image: url('images/num5.png');
+}
+
+.bg-num6 {
+	background-image: url('images/num6.png');
+}
+
+.bg-num7 {
+	background-image: url('images/num7.png');
+}
+
+.bg-num8 {
+	background-image: url('images/num8.png');
+}
+
+.bg-smiley {
+	background-image: url('images/smiley.png');
+}
+
+.bg-face-lose {
+	background-image: url('images/face_lose.png');
+}
+
+.bg-face-win {
+	background-image: url('images/face_win.png');
+}
+
+@font-face {
+	font-family: sevenSegment;
+	src: url(Seven\ Segment.ttf);
+}
